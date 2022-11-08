@@ -1,0 +1,15 @@
+name: hhh test
+run-name: build the program
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: self-hosted
+    steps:
+      - run: echo hello, world!
+      
+  build-the-program:
+    runs-on: self-hosted
+    steps:
+      - run: make
+    
