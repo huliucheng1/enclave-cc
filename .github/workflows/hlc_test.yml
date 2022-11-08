@@ -11,5 +11,7 @@ jobs:
   build-the-program:
     runs-on: self-hosted
     steps:
+      - run: echo $(pwd)
+      - run: echo $USER
       - run: make
     
