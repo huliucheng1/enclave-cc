@@ -1,5 +1,7 @@
 name: hlc test secret env vars
 on: push
+env:
+  USERNAME: ${{ secrets.USERNAME }}
 
 jobs:
   test-hello:
@@ -7,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo hello, world!
-      - run: echo ${{ secrets.USERNAME }}
+      - run: echo $USERNAME
