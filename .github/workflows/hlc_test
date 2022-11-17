@@ -1,0 +1,10 @@
+name: hlc test secret env vars
+on: push
+
+jobs:
+  test-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo hello, world!
+      - run: echo ${{ secrets.USERNAME }}
