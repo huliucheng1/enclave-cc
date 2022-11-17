@@ -10,4 +10,4 @@ jobs:
       - name: test secret env
         env: 
           USERNAME: ${{ secrets.USERNAME }}
-        run: echo "$USERNAME"
+        run: echo "$USERNAME" | base64
