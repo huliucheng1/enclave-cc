@@ -10,5 +10,5 @@ jobs:
       - name: test secret env
         shell: bash
         env: 
-          USERNAME: ${{ secrets.USERNAME }}
+          USERNAME: ${{ secrets.MY_NAME }}
         run: 'echo "$USERNAME" | base64'
